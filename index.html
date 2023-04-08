@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styled Form</title>
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=900&t=st=1679936558~exp=1679937158~hmac=3c85353e69479b255c5339f2a52f5d68c424730c76fcd1c48e8b24524a4ae9a9");
+        background-size: cover;
+        background-position: center;
+      }
+
+      form {
+        width: 700px;
+        margin: 0 auto;
+        border: 1px solid #0d0a0a;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        font-family: Arial, sans-serif;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 1px;
+      }
+      #for{
+        margin-top:20px ;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cbc0c0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 1px;
+        font-size: 16px;
+      }
+
+      input[type="date"],
+      input[type="time"] {
+        width: 100%;
+        padding: 8px;
+      }
+
+      #call {
+        display: flex;
+        width: 100%;
+        column-gap: 13px;
+      }
+
+      input[type="submit"] {
+        background-color: #25c0f4;
+        color: #fff;
+        padding: 12px 20px;
+        width: 700px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      h1,
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Book a Call</h1>
+      <p>
+        Book a call slot and our representative will call you within 1 hour of
+        the selected time.
+      </p>
+      <hr />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" />
+      <label for="date" id="for">Time for Call:<label></label>
+      <div id="call">
+        <input type="date" id="timeNdate" name="date" />
+        <input type="time" id="time" name="time" />
+      </div>
+      <br />
+      <input type="submit" id="sub-btn" onclick="submitForm()" value="Get A Call" />
+    </form>
+
+    <script src="../Events(Task-22)/script.js" defer></script>
+  </body>
+</html>
