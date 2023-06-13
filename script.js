@@ -1,4 +1,4 @@
-const btn = document.getElementById("sub-tn");
+const btn = document.getElementById("sub-btn");
 
 btn.addEventListener("mouseover", (e) => {
   e.preventDefault();
@@ -7,7 +7,7 @@ btn.addEventListener("mouseover", (e) => {
 
 btn.addEventListener("mouseout", (e) => {
   e.preventDefault();
-  document.getElementById("my-form").style.background = "#rrr";
+  document.getElementById("my-form").style.background = "black";
 });
 
 function printDetails(e) {
